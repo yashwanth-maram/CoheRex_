@@ -1,13 +1,20 @@
 <div align="center">
 
-<!-- Animated waving header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:6e40c9&height=220&section=header&text=CoheRex&fontSize=90&fontAlignY=38&fontColor=ffffff&fontStyle=bold&desc=Extreme-Value%20Temporal%20Forensics%20%26%20Confound-Controlled%20Evaluation%20for%20Inter-Frame%20Video%20Forgery%20Detection&descAlignY=62&descSize=16&animation=fadeIn" width="100%"/>
+<!-- Animated waving header — wave only (reliable capsule-render params) -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&animation=fadeIn" width="100%"/>
+
+<!-- Title block -->
+<h1>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=900&size=64&duration=1&pause=99999&color=FFFFFF&center=true&vCenter=true&repeat=false&width=600&height=80&lines=CoheRex" alt="CoheRex" />
+</h1>
+
+<p><strong>Extreme-Value Temporal Forensics &amp; Confound-Controlled Evaluation<br/>for Inter-Frame Video Forgery Detection</strong></p>
 
 <br/>
 
 <!-- Animated typing SVG -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=3500&pause=1000&color=4FC3F7&center=true&vCenter=true&multiline=true&repeat=true&width=860&height=90&lines=AUC+0.917+on+real+inter-frame+manipulations+%E2%80%94+verified+clean.;Tampering+breaks+physics+before+it+breaks+pixels.;Duration+shortcut+proven+generator-induced+%26+unbounded." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=3500&pause=1000&color=4FC3F7&center=true&vCenter=true&multiline=true&repeat=true&width=860&height=90&lines=AUC+0.917+on+real+inter-frame+manipulations+%E2%80%94+verified+clean.;Tampering+breaks+physics+before+it+breaks+pixels.;Duration+shortcut%3A+proven+generator-induced+and+unbounded." alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -628,7 +635,7 @@ The kinematic channel (AUC 0.671) does not improve on pixels alone. This is **no
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6e40c9,50:1a1a2e,100:0d1117&height=130&section=footer&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=130&section=footer&animation=fadeIn" width="100%"/>
 
 <br/>
 
