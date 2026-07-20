@@ -21,9 +21,11 @@ class TrackManager:
         tamper_latch_frames=None,
         appearance_similarity_threshold=None,
         config=None,
+        dt=1.0,
     ):
         self.tracks = []
         self.next_track_id = 0
+        self.dt = dt
 
         cfg = config or CONFIG
         tc = cfg.tracking
@@ -112,7 +114,7 @@ class TrackManager:
             d_matches, _, _ = associate_tracks_to_detections(
                 dormant_tracks,
                 dormant_detections,
-                max_distance=self.reattach_distance,
+                max_distance=float('inf'), # BUG FIX: Allow infinite distance for forensic re-attachment
             )
 
             reattached = []
@@ -157,7 +159,7 @@ class TrackManager:
             cx, cy = detections[det_idx]
             bbox = self.current_bboxes[det_idx]
 
-            new_track = Track(self.next_track_id, (cx, cy), frame_id)
+            new_track = Track(self.next_track_id, (cx, cy), frame_id, dt=self.dt)
             # Initialize appearance
             hist = extract_color_histogram(self.current_frame, bbox)
             new_track.update_appearance(hist)

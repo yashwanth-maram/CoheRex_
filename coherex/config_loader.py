@@ -22,6 +22,9 @@ from coherex.config import (
     DetectionConfig,
     TrackingConfig,
     MotionConfig,
+    PhysicsConfig,
+    PoseRhythmConfig,
+    ChangepointConfig,
     IntegrityConfig,
     ContinuityConfig,
     CrowdConfig,
@@ -33,6 +36,7 @@ _TUPLE_FIELDS = {
     "fusion_weights",
     "verdict_thresholds",
     "identity_area_range",
+    "multi_scale_windows",
 }
 
 
@@ -90,6 +94,36 @@ def load_config_from_yaml(path: str) -> SystemConfig:
             motion=replace(
                 config.motion,
                 **_coerce_tuples(data["motion"])
+            ),
+        )
+
+    # ── Physics ───────────────────────────────────────────────────────
+    if "physics" in data:
+        config = replace(
+            config,
+            physics=replace(
+                config.physics,
+                **_coerce_tuples(data["physics"])
+            ),
+        )
+
+    # ── Pose Rhythm ───────────────────────────────────────────────────
+    if "pose_rhythm" in data:
+        config = replace(
+            config,
+            pose_rhythm=replace(
+                config.pose_rhythm,
+                **_coerce_tuples(data["pose_rhythm"])
+            ),
+        )
+
+    # ── Change-point ──────────────────────────────────────────────────
+    if "changepoint" in data:
+        config = replace(
+            config,
+            changepoint=replace(
+                config.changepoint,
+                **_coerce_tuples(data["changepoint"])
             ),
         )
 

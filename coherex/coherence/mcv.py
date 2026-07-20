@@ -6,11 +6,16 @@ class MotionCoherenceEngine:
     Computes continuous Motion Coherence Value (MCV)
     from trajectory motion signals.
 
+    AUXILIARY channel in CoheRex 2.0 — NIS is the primary signal.
+    MCV is retained for backward compatibility and as a complementary
+    signal for very young tracks before NIS accumulates.
+
     Pure engine — does NOT import CONFIG.
     Parameters are injected by the calling agent.
     """
 
-    def __init__(self, window_size=3, weights=(0.4, 0.3, 0.3), eps=1e-6, noise_floor=1.0):
+    def __init__(self, window_size=8, weights=(0.4, 0.3, 0.3), eps=1e-6, noise_floor=1.5):
+        # NOTE: window_size unified to 8 (was 3 in old engine default, 8 in config)
         self.window_size = window_size
         self.w_speed, self.w_acc, self.w_angle = weights
         self.eps = eps
@@ -19,7 +24,9 @@ class MotionCoherenceEngine:
     def _z_score(self, values):
         """
         Compute robust z-score for the latest value.
+
         Uses a noise floor to prevent score explosion on tiny jitter.
+        The noise floor (default 1.5) is documented in the paper.
         """
         if len(values) < self.window_size:
             return 0.0

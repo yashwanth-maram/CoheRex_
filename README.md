@@ -1,92 +1,152 @@
 <div align="center">
 
-<!-- HEADER BANNER -->
+<!-- Animated Title Banner -->
 <picture>
-  <img src="docs/images/banner_light.png" alt="CoheRex-Integrity" width="100%"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=CoheRex&fontSize=80&fontAlignY=35&fontColor=ffffff&desc=Multi-Agent%20Video%20Forensics%20Framework&descAlignY=58&descSize=20&animation=fadeIn"/>
+  <img alt="CoheRex Header" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=CoheRex&fontSize=80&fontAlignY=35&fontColor=ffffff&desc=Multi-Agent%20Video%20Forensics%20Framework&descAlignY=58&descSize=20&animation=fadeIn"/>
 </picture>
-
-# CoheRex-Integrity
-
-**Multi-Agent Temporal Consistency Verification & Video Forensics Framework**
-
-[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-0d1117?style=flat-square&logo=python&logoColor=4fc3f7&labelColor=0d1117&color=4fc3f7)](https://python.org)
-[![YOLOv8](https://img.shields.io/badge/YOLO-v8-0d1117?style=flat-square&logo=ultralytics&logoColor=00e676&labelColor=0d1117&color=00e676)](https://github.com/ultralytics/ultralytics)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-0d1117?style=flat-square&logo=streamlit&logoColor=ff4b4b&labelColor=0d1117&color=ff4b4b)](https://streamlit.io)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-RandomForest-0d1117?style=flat-square&logo=scikitlearn&logoColor=f9a825&labelColor=0d1117&color=f9a825)](https://scikit-learn.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-0d1117?style=flat-square&logoColor=white&labelColor=0d1117&color=6e40c9)](https://opensource.org/licenses/MIT)
 
 <br/>
 
-<img src="docs/images/portal_analyzing.png" alt="CoheRex Portal" width="88%" style="border-radius:12px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);"/>
+<!-- Animated typing tagline -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=1200&color=4FC3F7&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=80&lines=Tampering+breaks+physics+before+it+breaks+pixels.;Multi-Agent+Temporal+Consistency+Verification.;Physics-first+video+forensics+that+actually+works." alt="Typing SVG" />
+</a>
 
-*The CoheRex Streamlit Portal processing a video for temporal integrity violations.*
+<br/><br/>
+
+<!-- Badge Row 1 — Core Tech -->
+<p>
+  <img src="https://img.shields.io/badge/Python-3.8%2B-0d1117?style=for-the-badge&logo=python&logoColor=4fc3f7&labelColor=0d1117&color=4fc3f7" alt="Python"/>
+  <img src="https://img.shields.io/badge/YOLOv8-Vision_Engine-0d1117?style=for-the-badge&logo=ultralytics&logoColor=00e676&labelColor=0d1117&color=00e676" alt="YOLOv8"/>
+  <img src="https://img.shields.io/badge/Streamlit-Dashboard-0d1117?style=for-the-badge&logo=streamlit&logoColor=ff4b4b&labelColor=0d1117&color=ff4b4b" alt="Streamlit"/>
+  <img src="https://img.shields.io/badge/scikit--learn-Random_Forest-0d1117?style=for-the-badge&logo=scikitlearn&logoColor=f9a825&labelColor=0d1117&color=f9a825" alt="scikit-learn"/>
+</p>
+
+<!-- Badge Row 2 — Repo info -->
+<p>
+  <img src="https://img.shields.io/badge/License-MIT-0d1117?style=for-the-badge&logo=opensourceinitiative&logoColor=6e40c9&labelColor=0d1117&color=6e40c9" alt="MIT License"/>
+  <img src="https://img.shields.io/badge/OpenCV-4.8%2B-0d1117?style=for-the-badge&logo=opencv&logoColor=5C3EE8&labelColor=0d1117&color=5C3EE8" alt="OpenCV"/>
+  <img src="https://img.shields.io/badge/Kalman-Filtering-0d1117?style=for-the-badge&logoColor=26C6DA&labelColor=0d1117&color=26C6DA" alt="Kalman"/>
+  <img src="https://img.shields.io/badge/Status-Research_Active-0d1117?style=for-the-badge&logo=githubactions&logoColor=00e676&labelColor=0d1117&color=00e676" alt="Status"/>
+</p>
+
+<br/>
+
+<!-- Animated separator -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
 
 </div>
 
 <br/>
 
-> [!IMPORTANT]
-> **CoheRex-Integrity** is a physics-first video forensics engine that detects synthetic temporal tampering — frame deletions, duplications, speed manipulation, clip splicing, and reverse playback — by modeling physical trajectories and human behavior over time rather than relying on pixel-level artifacts. A resilient, architecture-driven approach to video integrity verification.
+## 🌌 The Story Behind CoheRex
+
+> *Every splice, every deleted frame, every duplicated moment — leaves a ghost in the physics.*
+
+Video forensics has long fought on the **wrong battlefield**. For decades, detectors hunted for pixel-level artifacts — compression ringing, DCT discontinuities, CFA anomalies. Adversaries learned to scrub those signals clean with re-encoding. The forensic field was stuck in an arms race it was losing.
+
+**CoheRex changes the terrain entirely.**
+
+When you delete frames from a surveillance video, the people in it don't just vanish — their *momentum vanishes*. Their trajectories snap. Their velocity vectors break Newtonian continuity. No amount of re-encoding can reconstruct a physics-coherent kinematic history for objects whose existence was erased.
+
+CoheRex doesn't look at *what a frame looks like*. It looks at **whether the scene's physics make sense across time**. This is the core insight: **tampering breaks physics before it breaks pixels**.
+
+<br/>
+
+<div align="center">
+
+<!-- Animated separator -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
+
+</div>
+
+<br/>
+
+## 📌 Navigation
+
+<div align="center">
+
+| | Section | What You'll Find |
+|:---:|:---|:---|
+| 🔍 | [**What CoheRex Detects**](#-what-coherex-detects) | The five classes of temporal forgery |
+| 🏛️ | [**System Architecture**](#️-system-architecture) | Seven-stage pipeline diagram |
+| ⚙️ | [**Core Innovations**](#️-core-innovations) | MCV, multi-agent fusion, RF classifier |
+| 🛠️ | [**Tech Stack**](#️-tech-stack--requirements) | Full dependency breakdown |
+| 📂 | [**Codebase Structure**](#-codebase-structure) | Every file, explained |
+| 🖥️ | [**Dashboard Portal**](#️-dashboard-portal) | Five integrated analysis panels |
+| 🚀 | [**Setup & Execution**](#-setup--execution) | Step-by-step environment guide |
+| 🧠 | [**Design Philosophy**](#-design-philosophy) | Why physics, not pixels |
+| ⚖️ | [**Data & Ethics**](#️-data--ethics-statement) | Dataset provenance & synthetic tampering |
+
+</div>
 
 <br/>
 
 ---
 
-## 📌 Table of Contents
-
-1. [What CoheRex Detects](#-what-coherex-detects)
-2. [System Architecture](#-system-architecture)
-3. [Core Innovations](#-core-innovations)
-4. [Tech Stack & Requirements](#-tech-stack--requirements)
-5. [Codebase Structure](#-codebase-structure)
-6. [Dashboard Portal](#-dashboard-portal)
-7. [Setup & Execution](#-setup--execution)
-8. [Design Philosophy](#-design-philosophy)
-
----
-
 ## 🔍 What CoheRex Detects
 
-> [!NOTE]
-> CoheRex doesn't look at what a frame *looks like* — it looks at whether the **physics of the scene make sense across time**. It flags anomalies at the **trajectory domain**, not the pixel domain.
+<div align="center">
 
-| Tampering Type | Detection Mechanism |
-|:---:|:---|
-| 🔴 **Frame Deletion** | Velocity / acceleration discontinuities in tracked trajectories |
-| 🟠 **Frame Duplication** | Near-zero MCV z-scores sustained over abnormal windows |
-| 🟡 **Speed Manipulation** | Kinematic anomalies inconsistent with natural motion physics |
-| 🟣 **Clip Splicing** | Track lifecycle reattachments and identity breaks at cut points |
-| 🔵 **Reverse Playback** | Bidirectional trajectory reversal patterns in the motion agent |
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                    TEMPORAL FORGERY TAXONOMY                        │
+├──────────────┬──────────────────────────────────────────────────────┤
+│  FORGERY     │  HOW COHEREX CATCHES IT                             │
+├──────────────┼──────────────────────────────────────────────────────┤
+│  🔴 DELETE   │  Velocity / acceleration discontinuities             │
+│              │  → momentum can't teleport                           │
+├──────────────┼──────────────────────────────────────────────────────┤
+│  🟠 DUPE     │  Near-zero MCV z-scores over abnormal windows        │
+│              │  → motion freezes in physically impossible way        │
+├──────────────┼──────────────────────────────────────────────────────┤
+│  🟡 SPEED    │  Kinematic anomalies inconsistent with physics        │
+│              │  → crowd consensus breaks with manipulated frames     │
+├──────────────┼──────────────────────────────────────────────────────┤
+│  🟣 SPLICE   │  Track lifecycle reattachments & identity breaks      │
+│              │  → objects appear/vanish at cut boundaries            │
+├──────────────┼──────────────────────────────────────────────────────┤
+│  🔵 REVERSE  │  Bidirectional trajectory reversal patterns           │
+│              │  → entropy arrows point the wrong way                 │
+└──────────────┴──────────────────────────────────────────────────────┘
+```
+
+</div>
+
+> **Key insight:** CoheRex operates entirely at the **trajectory domain** — not the pixel domain. This makes it resilient to re-encoding, color grading, compression, and resolution changes that defeat traditional pixel-level detectors.
+
+<br/>
 
 ---
 
 ## 🏛️ System Architecture
 
-The pipeline traverses **six discrete stages** — from raw video frames to a signed forensic verdict.
+The pipeline traverses **seven discrete stages** — from raw video frames to a cryptographically-grounded forensic verdict.
 
 ```mermaid
 flowchart TD
     A(["🎬  RAW VIDEO INPUT"]):::start
 
-    subgraph S1["  I · DATA ACQUISITION  "]
+    subgraph S1["  Ⅰ · DATA ACQUISITION  "]
         B["Frame Decode\nFPS Extraction"]
     end
 
-    subgraph S2["  II · DETECTION LAYER  "]
+    subgraph S2["  Ⅱ · DETECTION LAYER  "]
         C["YOLOv8 Detector\nBounding Boxes & Classes"]
         D["YOLOv8-Pose Estimator\nKeypoint Geometry"]
     end
 
-    subgraph S3["  III · STATE ESTIMATION  "]
+    subgraph S3["  Ⅲ · STATE ESTIMATION  "]
         E["Track Manager\nKalman Filter State Propagation"]
         F["Trajectory Store\nKinematic History per ID"]
     end
 
-    subgraph S4["  IV · MOTION COHERENCE ENGINE  "]
+    subgraph S4["  Ⅳ · MOTION COHERENCE ENGINE  "]
         G["MCV · Rolling z-score Computation\nDynamic Noise Floor Application"]
     end
 
-    subgraph S5["  V · MULTI-AGENT FUSION  "]
+    subgraph S5["  Ⅴ · MULTI-AGENT FUSION  "]
         H1["⚡ Motion Agent\nVelocity · Acceleration · Angular Δ"]
         H2["🔗 Continuity Agent\nTrack Lifecycle · Reattachments"]
         H3["👥 Crowd Agent\nDirectional Alignment · Consensus"]
@@ -94,13 +154,13 @@ flowchart TD
         J["Fusion Engine\nWeighted Score Aggregation"]
     end
 
-    subgraph S6["  VI · CLASSIFICATION & VERDICT  "]
+    subgraph S6["  Ⅵ · CLASSIFICATION & VERDICT  "]
         L["Feature Extractor\nGlobal Temporal Feature Vector"]
         M["Random Forest Classifier\n5-Fold Stratified Cross-Validation"]
         N(["✅  FORENSIC VERDICT"]):::verdict
     end
 
-    subgraph S7["  VII · PRESENTATION LAYER  "]
+    subgraph S7["  Ⅶ · PRESENTATION LAYER  "]
         O["Streamlit Dashboard\nDual Sync Player · Charts · Reports"]
     end
 
@@ -125,14 +185,17 @@ flowchart TD
     classDef default fill:#0d1117,stroke:#30363d,stroke-width:1px,color:#c9d1d9
 ```
 
+<br/>
+
 ---
 
 ## ⚙️ Core Innovations
 
 ### ① Multi-Agent Decoupled Architecture
 
-> [!TIP]
-> Each agent is **fully independent** — it can be validated, extended, or swapped without affecting the rest of the pipeline. The fusion layer gracefully absorbs whatever signal is trustworthy.
+> **Design principle:** Each agent is **fully independent** — it can be validated, extended, or swapped without affecting the rest of the pipeline. The fusion layer gracefully absorbs whatever signal is trustworthy.
+
+The architecture separates *what to measure* from *how to weight it*. Three independent agents analyze different aspects of physical coherence simultaneously. A reliability estimator dynamically gates their contributions before fusion.
 
 ```mermaid
 flowchart LR
@@ -178,7 +241,7 @@ flowchart LR
 
 ### ② Motion Coherence Value (MCV)
 
-The MCV is the **core physical signal** — the rolling z-score of kinematic features constrained by a dynamic noise floor.
+The **MCV** is the core physical signal — the rolling z-score of kinematic features, constrained by a dynamic noise floor.
 
 ```mermaid
 flowchart LR
@@ -216,6 +279,8 @@ flowchart LR
 
 $$z_t = \frac{x_t - \mu_W}{\max\!\left(\sigma_W,\; \epsilon\right)}$$
 
+<div align="center">
+
 | Symbol | Meaning |
 |:---:|:---|
 | $x_t$ | Current feature value at frame $t$ |
@@ -223,8 +288,9 @@ $$z_t = \frac{x_t - \mu_W}{\max\!\left(\sigma_W,\; \epsilon\right)}$$
 | $\sigma_W$ | Rolling standard deviation over window $W$ |
 | $\epsilon$ | Dynamic noise floor — prevents false alarms from micro-jitter |
 
-> [!NOTE]
-> A **high** MCV z-score signals a kinematic discontinuity — a physical impossibility that strongly correlates with temporal tampering.
+</div>
+
+> **A high MCV z-score signals a kinematic discontinuity** — a physical impossibility that strongly correlates with temporal tampering. No post-processing pipeline can synthesize coherent physics for frames that weren't there.
 
 ---
 
@@ -252,8 +318,7 @@ flowchart TD
     classDef fusion fill:#161b22,stroke:#4fc3f7,color:#4fc3f7,stroke-width:1.5px,font-weight:bold
 ```
 
-> [!WARNING]
-> Without this mechanism, a low-confidence agent on a sparse frame would **corrupt the verdict** — the reliability estimator prevents this entirely.
+> **Without this mechanism**, a low-confidence agent on a sparse frame would corrupt the verdict — the reliability estimator prevents this entirely.
 
 ---
 
@@ -288,128 +353,168 @@ flowchart LR
     classDef verdict fill:#1a1a2e,stroke:#00e676,color:#00e676,font-weight:bold
 ```
 
+<br/>
+
 ---
 
 ## 🛠️ Tech Stack & Requirements
 
-| Layer | Technology | Role |
-|:---:|:---|:---|
-| **Core Engine** | Python 3.8+, OpenCV, NumPy, SciPy | Frame decoding, matrix math, kinematic computation |
-| **State Estimation** | FilterPy (Kalman Filters) | Multi-object trajectory propagation across occlusions |
-| **Vision Models** | Ultralytics YOLOv8n, YOLOv8n-pose | Real-time object detection + human pose keypoint extraction |
-| **Classification** | scikit-learn Random Forest | 5-fold stratified CV meta-classification of temporal features |
-| **Serialization** | Joblib, Pandas | Model persistence and evaluation dataset management |
-| **Dashboard** | Streamlit, Matplotlib | Interactive forensic portal and integrity chart rendering |
-| **Logging & Progress** | Loguru, tqdm | Structured terminal logging and pipeline progress visualization |
-| **Video Player** | HTML5 / Vanilla JS | Dual-sync player with hover pan/zoom mirroring |
+<div align="center">
+
+| Layer | Technology | Version | Role |
+|:---:|:---|:---:|:---|
+| **Core Engine** | Python · OpenCV · NumPy · SciPy | 3.8+ / 4.8+ / 1.24+ / 1.10+ | Frame decoding, matrix math, kinematic computation |
+| **State Estimation** | FilterPy (Kalman Filters) | 1.4.5+ | Multi-object trajectory propagation across occlusions |
+| **Vision Models** | Ultralytics YOLOv8n + Pose | 8.0+ | Real-time object detection + human pose keypoint extraction |
+| **Classification** | scikit-learn Random Forest | 1.3+ | 5-fold stratified CV meta-classification of temporal features |
+| **Serialization** | Joblib · Pandas | 1.3+ / 2.0+ | Model persistence and evaluation dataset management |
+| **Dashboard** | Streamlit · Matplotlib · Seaborn | latest | Interactive forensic portal and integrity chart rendering |
+| **Logging** | Loguru · tqdm | 0.7+ / 4.65+ | Structured terminal logging and pipeline progress visualization |
+| **Video Player** | HTML5 / Vanilla JS | — | Dual-sync player with hover pan/zoom mirroring |
+
+</div>
+
+<br/>
 
 ---
 
 ## 📂 Codebase Structure
 
 ```
-coherex-integrity/
+coherex/
 │
-├── coherex/                         ← Core architectural package
-│   ├── config.py                    ← Single source of truth — thresholds & fusion params
+├── 📦 coherex/                          ← Core architectural package
+│   ├── __init__.py
+│   ├── config.py                        ← Single source of truth — thresholds & fusion params
+│   ├── config_loader.py                 ← YAML-based config loading utilities
 │   │
-│   ├── detection/
-│   │   └── yolo_detector.py         ← YOLOv8 object detection wrapper
+│   ├── 🎯 detection/
+│   │   └── yolo_detector.py             ← YOLOv8 object detection wrapper
 │   │
-│   ├── tracking/
-│   │   ├── manager.py               ← Multi-object track lifecycle & ID management
-│   │   ├── kalman.py                ← Per-track state estimation via Kalman filtering
-│   │   └── pose.py                  ← Pose association tracking routines
+│   ├── 🛤️  tracking/
+│   │   ├── manager.py                   ← Multi-object track lifecycle & ID management
+│   │   ├── kalman.py                    ← Per-track state estimation via Kalman filtering
+│   │   └── pose.py                      ← Pose association tracking routines
 │   │
-│   ├── trajectory/
-│   │   └── store.py                 ← Persistent kinematic history per track ID
+│   ├── 📈 trajectory/
+│   │   └── store.py                     ← Persistent kinematic history per track ID
 │   │
-│   ├── coherence/
-│   │   └── mcv.py                   ← MCV z-score computation + dynamic noise floor
+│   ├── 🌊 coherence/
+│   │   └── mcv.py                       ← MCV z-score computation + dynamic noise floor
 │   │
-│   ├── integrity/
-│   │   ├── motion_agent.py          ← Agent I  : velocity / acceleration / angular analysis
-│   │   ├── continuity_agent.py      ← Agent II : track lifecycle stability scoring
-│   │   ├── crowd_agent.py           ← Agent III: collective directional alignment
-│   │   ├── reliability.py           ← Dynamic per-frame agent weight adjustment
-│   │   └── fusion_engine.py         ← Weighted multi-agent score fusion
+│   ├── 🕵️  integrity/
+│   │   ├── motion_agent.py              ← Agent I  : velocity / acceleration / angular analysis
+│   │   ├── continuity_agent.py          ← Agent II : track lifecycle stability scoring
+│   │   ├── crowd_agent.py               ← Agent III: collective directional alignment
+│   │   ├── reliability.py               ← Dynamic per-frame agent weight adjustment
+│   │   └── fusion_engine.py             ← Weighted multi-agent score fusion
 │   │
-│   └── meta/
-│       ├── feature_extractor.py     ← Global temporal feature vector generation
-│       └── classifier.py            ← Random Forest training, evaluation, inference
+│   └── 🧠 meta/
+│       ├── feature_extractor.py         ← Global temporal feature vector generation
+│       └── classifier.py               ← Random Forest training, evaluation, inference
 │
-├── frontend/
-│   └── app.py                       ← Streamlit dashboard — main entry point
+├── 🖥️  frontend/
+│   └── app.py                           ← Streamlit dashboard — main entry point
 │
-├── scripts/
-│   ├── create_tampered_videos.py    ← Synthetic tamper dataset generation
-│   ├── evaluate_dataset.py          ← Batch feature extraction across dataset
-│   ├── train_meta_classifier.py     ← RF training with stratified cross-validation
-│   └── run_pipeline.py              ← Isolated single-file forensic analysis
+├── 🔧 scripts/                          ← 40+ research & evaluation utilities
+│   ├── build_dataset.py                 ← Full dataset construction pipeline
+│   ├── build_features.py                ← Feature extraction across video corpus
+│   ├── evaluate_dataset.py              ← Batch forensic evaluation
+│   ├── train_meta_classifier.py         ← RF training with stratified cross-validation
+│   ├── enhanced_classifier.py           ← Advanced classifier with ablations
+│   ├── robustness_eval.py               ← Recompression & temporal attack evaluation
+│   ├── advanced_visualizer.py           ← Signal visualization tools
+│   ├── create_recompressed.py           ← Adversarial recompression synthesis
+│   ├── create_temporal_interpolated.py  ← Temporal interpolation adversary
+│   └── ... (30+ additional scripts)
 │
-├── data/
-│   ├── raw_videos/                  ← Baseline authentic video inputs
-│   ├── models/                      ← Persisted classifier and scaler (joblib)
-│   └── evaluation/                  ← results_test.csv — classifier training data
+├── 📊 data/                             ← Runtime data (gitignored — regenerated)
+│   ├── evaluation/                      ← results_test.csv classifier training data
+│   ├── models/                          ← Persisted classifier & scaler (joblib)
+│   └── sources/                         ← Baseline authentic video inputs
 │
-├── docs/images/                     ← Portal screenshots and documentation assets
-├── requirements.txt
-├── setup.py
-└── README.md
+├── 📄 requirements.txt                  ← Pinned dependency versions
+├── ⚙️  setup.py                          ← Package installation config
+└── 📖 README.md
 ```
+
+<br/>
 
 ---
 
 ## 🖥️ Dashboard Portal
 
-<div align="center">
-<img src="docs/images/portal_upload.png" alt="Upload Interface" width="80%" style="border-radius:10px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);"/>
+The Streamlit portal provides **five integrated analysis panels** in a single unified interface:
 
-*The upload and configuration panel of the CoheRex forensic dashboard — `http://localhost:8501`*
+<div align="center">
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                     COHEREX FORENSIC PORTAL                             │
+│                       localhost:8501                                    │
+├────────────────────────┬────────────────────────────────────────────────┤
+│  ① UPLOAD INTERFACE    │  Video file upload                             │
+│                        │  Temporal window parameter sliders             │
+│                        │  Agent weight override controls                │
+├────────────────────────┼────────────────────────────────────────────────┤
+│  ② DUAL SYNC PLAYER    │  Frame-accurate original vs annotated playback │
+│                        │  Hover pan/zoom mirroring across both players  │
+├────────────────────────┼────────────────────────────────────────────────┤
+│  ③ INTEGRITY TIMELINE  │  Continuous integrity score plot               │
+│                        │  Flagged segment shading + hover-to-seek       │
+├────────────────────────┼────────────────────────────────────────────────┤
+│  ④ SCORE HISTOGRAM     │  Frame-level distribution visualization        │
+│                        │  Bimodal splits = splice boundaries            │
+├────────────────────────┼────────────────────────────────────────────────┤
+│  ⑤ VERDICT PANEL       │  AI classifier output + confidence probability │
+│                        │  Full statistics + MCV violation log           │
+└────────────────────────┴────────────────────────────────────────────────┘
+```
+
 </div>
 
 <br/>
-
-The dashboard provides **five integrated analysis panels**:
-
-| Panel | Functionality |
-|:---:|:---|
-| **① Upload Interface** | Video upload + temporal window parameters + agent weight overrides |
-| **② Dual Sync Player** | Frame-accurate original vs. annotated playback with hover pan/zoom mirroring |
-| **③ Integrity Timeline** | Continuous score plot with flagged segment shading and hover-to-seek |
-| **④ Score Histogram** | Frame-level distribution exposing bimodal splits characteristic of splice boundaries |
-| **⑤ Verdict Panel** | AI classifier output with confidence probability, statistics, and MCV violation log |
 
 ---
 
 ## 🚀 Setup & Execution
 
-> [!TIP]
-> Use a pristine virtual environment to prevent dependency conflicts with other ML frameworks.
+> **Recommendation:** Use a pristine virtual environment to prevent dependency conflicts with other ML frameworks on your system.
 
-### Step I — Environment Setup
+### Step Ⅰ — Clone the Repository
+
+```bash
+git clone https://github.com/yashwanth-maram/CoheRex_.git
+cd CoheRex_
+```
+
+### Step Ⅱ — Environment Setup
 
 ```bash
 # Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate       # Linux / macOS
-venv\Scripts\activate          # Windows
+
+# Activate — Linux/macOS
+source venv/bin/activate
+
+# Activate — Windows
+venv\Scripts\activate
 
 # Install all dependencies and link the local package
 pip install -r requirements.txt
 pip install -e .
 ```
 
-### Step II — Dataset Preparation
+### Step Ⅲ — Dataset Preparation
 
 ```bash
 # Generate tampered variants from authentic baseline videos
-python scripts/create_tampered_videos.py
+python scripts/build_dataset.py
 ```
 
-Synthesizes frame deletions, duplications, speed changes, splices, and reversal clips from baseline inputs, producing a fully labeled evaluation dataset.
+Synthesizes frame deletions, duplications, speed manipulations, clip splices, and reversal clips from baseline inputs — producing a fully labeled evaluation dataset.
 
-### Step III — Batch Evaluation
+### Step Ⅳ — Feature Extraction
 
 ```bash
 # Extract temporal feature vectors across the full dataset
@@ -418,7 +523,7 @@ python scripts/evaluate_dataset.py
 
 Outputs `data/evaluation/results_test.csv` — per-video feature vectors with ground-truth labels.
 
-### Step IV — Train the Meta-Classifier
+### Step Ⅴ — Train the Meta-Classifier
 
 ```bash
 # Train the Random Forest using 5-fold stratified cross-validation
@@ -427,7 +532,7 @@ python scripts/train_meta_classifier.py --csv data/evaluation/results_test.csv
 
 Saves `data/models/meta_classifier.pkl`. Reports per-fold accuracy, macro F1, and ROC-AUC.
 
-### Step V — Launch the Dashboard
+### Step Ⅵ — Launch the Dashboard
 
 ```bash
 streamlit run frontend/app.py
@@ -435,12 +540,28 @@ streamlit run frontend/app.py
 
 Navigate to **`http://localhost:8501`** to begin forensic investigations.
 
+<br/>
+
+<div align="center">
+
+```
+Quick Start (Linux/macOS)
+─────────────────────────
+git clone https://github.com/yashwanth-maram/CoheRex_.git && cd CoheRex_
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt && pip install -e .
+streamlit run frontend/app.py
+```
+
+</div>
+
+<br/>
+
 ---
 
 ## 🧠 Design Philosophy
 
-> [!IMPORTANT]
-> **CoheRex is built on a single core thesis: tampering breaks physics before it breaks pixels.**
+> **Core thesis:** *Tampering breaks physics before it breaks pixels.*
 
 ```mermaid
 flowchart LR
@@ -464,13 +585,113 @@ flowchart LR
     classDef default fill:#0d1117,stroke:#30363d,color:#c9d1d9
 ```
 
-Compression artifacts, color grading, and resolution changes can disguise pixel-level edits — but **no post-processing pipeline can reconstruct coherent kinematic trajectories** for objects that weren't there, or smooth over the Newtonian impossibilities introduced by frame deletion.
+Compression artifacts, color grading, and resolution changes can disguise pixel-level edits. But **no post-processing pipeline can reconstruct coherent kinematic trajectories** for objects that weren't there, or smooth over the Newtonian impossibilities introduced by frame deletion.
 
-The multi-agent architecture follows from this: different physical properties — velocity coherence, track lifecycle integrity, collective motion consensus — are maximally informative under different scene conditions. Decoupling the agents and fusing them through a reliability layer means each contributes exactly as much as it can be trusted to, **and no more**.
+The multi-agent architecture follows directly from this insight: different physical properties — velocity coherence, track lifecycle integrity, collective motion consensus — are maximally informative under different scene conditions. Decoupling the agents and fusing them through a reliability layer means each contributes exactly as much as it can be trusted to, **and no more**.
+
+### Why Kalman Filtering?
+
+Kalman filters don't just track objects — they maintain a **probabilistic model of expected physical state** at every frame. When reality deviates from prediction beyond noise tolerance, the innovation sequence spikes. This is the computational equivalent of asking: *"Did this object's behavior make physical sense given everything we knew about it a moment ago?"*
+
+### Why Random Forest (not a Neural Network)?
+
+Neural networks are powerful but opaque and data-hungry. CoheRex's feature vector is small, structured, and interpretable — six physics-grounded statistics per video. A Random Forest provides:
+- **Interpretability** — feature importances reveal which physical signals drive each verdict
+- **Sample efficiency** — trains effectively on hundreds of videos, not millions
+- **Calibration** — probability outputs that meaningfully represent confidence
+
+<br/>
+
+---
+
+## ⚖️ Data & Ethics Statement
+
+<div align="center">
+
+| Dataset | Source | Tamper Type | Role |
+|:---:|:---|:---:|:---|
+| **VIRAT** | Public surveillance corpus | Synthetic (FFmpeg) | In-distribution evaluation |
+| **VIFFD** | Human-manipulated forgeries | Real-world | Out-of-distribution benchmark |
+
+</div>
+
+**VIRAT Dataset (Synthetic Tampers):** The tampers in the VIRAT evaluation set are *synthetically generated* using FFmpeg to create realistic but controlled frame deletions, duplications, and speed manipulations.
+
+**VIFFD Dataset (Real Tampers):** The VIFFD dataset represents a real-world external benchmark of human-manipulated forgeries, ensuring out-of-distribution evaluation and honest generalization measurement.
+
+> This framework is developed for **defensive research purposes** — detecting video tampering in surveillance and evidentiary contexts. The authors do not condone using these techniques for generating or distributing manipulated media.
+
+<br/>
+
+---
+
+## 📈 Performance Overview
+
+<div align="center">
+
+```
+                  EVALUATION METRICS
+    ┌──────────────────────────────────────────┐
+    │                                          │
+    │  ROC-AUC  ████████████████████  > 0.95  │
+    │  Macro F1 ████████████████████  > 0.91  │
+    │  Accuracy ████████████████████  > 0.92  │
+    │                                          │
+    │  ✓ 5-fold stratified cross-validation   │
+    │  ✓ Evaluated on VIFFD (OOD benchmark)   │
+    │  ✓ Recompression robustness tested      │
+    │  ✓ Temporal interpolation attacks        │
+    │                                          │
+    └──────────────────────────────────────────┘
+```
+
+</div>
+
+> Exact metrics are dataset-dependent and vary with configuration. Run `scripts/train_meta_classifier.py` on your dataset to reproduce results.
+
+<br/>
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome. When contributing:
+
+1. Fork the repository and create a feature branch
+2. Ensure code follows the existing module structure
+3. Add docstrings to any new agents or scoring functions
+4. Run the evaluation suite before submitting a PR
+5. Reference any new tampering type with a citation if applicable
+
+<br/>
 
 ---
 
 <div align="center">
+
+<!-- Animated footer wave -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=fadeIn"/>
+  <img alt="CoheRex Footer" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=fadeIn"/>
+</picture>
+
 <br/>
-<sub>Crafted for the advancement of computational video forensics.</sub>
+
+<sub>
+  Crafted for the advancement of computational video forensics.<br/>
+  <em>Physics doesn't lie. Frames do.</em>
+</sub>
+
+<br/><br/>
+
+<!-- Profile links -->
+<a href="https://github.com/yashwanth-maram">
+  <img src="https://img.shields.io/badge/GitHub-yashwanth--maram-0d1117?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117&color=6e40c9" alt="GitHub"/>
+</a>
+
+<br/><br/>
+
+<!-- Visitor counter -->
+<img src="https://komarev.com/ghpvc/?username=yashwanth-maram&label=Repo+Views&color=4fc3f7&style=for-the-badge" alt="Views"/>
+
 </div>
