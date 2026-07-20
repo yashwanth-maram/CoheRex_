@@ -21,7 +21,6 @@
 
 <!-- Badge Row 1 — Research identifiers -->
 <p>
-  <img src="https://img.shields.io/badge/Paper-CoheRex_2025-0d1117?style=for-the-badge&logo=arxiv&logoColor=ff4b4b&labelColor=0d1117&color=ff4b4b" alt="Paper"/>
   <img src="https://img.shields.io/badge/Institution-BVRIT_Narsapur-0d1117?style=for-the-badge&logo=academia&logoColor=4fc3f7&labelColor=0d1117&color=4fc3f7" alt="Institution"/>
   <img src="https://img.shields.io/badge/AUC-0.917_on_VIFFD-0d1117?style=for-the-badge&logo=chart-bar&logoColor=00e676&labelColor=0d1117&color=00e676" alt="AUC"/>
   <img src="https://img.shields.io/badge/License-MIT-0d1117?style=for-the-badge&logo=opensourceinitiative&logoColor=6e40c9&labelColor=0d1117&color=6e40c9" alt="MIT"/>
