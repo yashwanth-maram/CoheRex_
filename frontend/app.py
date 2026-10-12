@@ -1042,7 +1042,8 @@ elif phase == "results":
     with hc:
         st.pyplot(chart_histogram(report))
     with sc:
-        total = report["total_frames"]
+        total_count = report.get("total_frames", 0)
+        total = max(1, total_count)
         hp = sum(1 for s in report["frame_scores"] if s>=BAND_HIGH)/total*100
         mp = sum(1 for s in report["frame_scores"] if BAND_MODERATE<=s<BAND_HIGH)/total*100
         cp = sum(1 for s in report["frame_scores"] if s<BAND_MODERATE)/total*100

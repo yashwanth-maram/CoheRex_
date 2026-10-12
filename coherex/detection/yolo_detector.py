@@ -39,7 +39,7 @@ class YOLODetector:
         Returns:
             List[dict]: detections with bbox, confidence, class_id
         """
-        results = self.model(frame, conf=self.conf_threshold, imgsz=416, verbose=False)
+        results = self.model(frame, conf=self.conf_threshold, verbose=False)
 
         detections = []
 
