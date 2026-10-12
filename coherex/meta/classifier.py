@@ -132,7 +132,7 @@ class MetaClassifier:
         if not self._available:
             return {"confidence": None, "verdict": "UNAVAILABLE", "available": False}
 
-        vec = [feature_dict[k] for k in self._features]
+        vec = [feature_dict.get(k, 0.0) for k in self._features]
         return self.score(vec)
 
     def reload(self):
