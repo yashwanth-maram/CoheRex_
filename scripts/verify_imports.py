@@ -29,16 +29,21 @@ except Exception as e:
 # 3. Track
 try:
     from coherex.tracking.track import Track
+    from coherex.config import CONFIG
     t = Track(0, (100, 200), 0)
     assert hasattr(t, 'kf_cv')
     assert hasattr(t, 'kf_ca')
     assert hasattr(t, 'nis_combined_history')
     assert hasattr(t, 'keypoint_history')
     import numpy as np
-    t.update(105, 205)
-    assert len(t.nis_cv_history) == 1
-    assert len(t.nis_ca_history) == 1
-    assert len(t.nis_combined_history) == 1
+    # Advance past warmup frames so NIS values are captured
+    for f in range(CONFIG.physics.nis_warmup_frames + 1):
+        t.mark_hit(f)
+        t.predict()
+        t.update(105 + f, 205 + f)
+    assert len(t.nis_cv_history) >= 1, "nis_cv_history is empty"
+    assert len(t.nis_ca_history) >= 1, "nis_ca_history is empty"
+    assert len(t.nis_combined_history) >= 1, "nis_combined_history is empty"
     print(f"[OK] track.py (NIS after update: cv={t.nis_cv_history[0]:.2f}, ca={t.nis_ca_history[0]:.2f}, combined={t.nis_combined_history[0]:.2f})")
 except Exception as e:
     errors.append(f"track.py: {e}")

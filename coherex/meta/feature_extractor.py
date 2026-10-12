@@ -33,9 +33,6 @@ FEATURE_NAMES = [
     "nis_topk_mean",
     "nis_exceed_frac",
     "nis_longest_run",
-    "nis_relative_spike",
-    "nis_mad_zscore",
-    "nis_top10_vs_bot50",
     # Change-point channel (GLR)
     "glr_peak",
     "glr_dispersion",
@@ -46,8 +43,17 @@ FEATURE_NAMES = [
     "spec_entropy",
     "dom_freq_stab",
     "dom_power",
+    # Scene channel (track count dynamics)
     "tc_max_jump",
     "tc_jump_frac",
+]
+
+# Extended feature names (including baseline and legacy ablation features)
+EXTENDED_FEATURE_NAMES = [
+    *FEATURE_NAMES,
+    "nis_relative_spike",
+    "nis_mad_zscore",
+    "nis_top10_vs_bot50",
     "birth_burst",
     "death_burst",
     "_baseline_ssim_mean",
@@ -80,11 +86,10 @@ def build_feature_vector(
     whiteness_lag2: float = 0.0,
     spec_entropy: float = 1.0,
     dom_freq_stab: float = 0.0,
+    dom_power: float = 0.0,
     tc_max_jump: int = 0,
     tc_jump_frac: float = 0.0,
-    birth_burst: int = 0,
-    death_burst: int = 0,
-    identity_switches: int = 0,
+    **kwargs,
 ) -> list:
     """
     Build the canonical CoheRex 2.0 feature vector.
@@ -92,7 +97,6 @@ def build_feature_vector(
     All arguments correspond to the principled physics-based signals
     defined in the paper. No ad-hoc features.
     """
-    dom_power = None
     return [
         float(nis_peak),
         float(nis_topk_mean),
@@ -107,9 +111,6 @@ def build_feature_vector(
         float(dom_power),
         float(tc_max_jump),
         float(tc_jump_frac),
-        float(birth_burst),
-        float(death_burst),
-        float(identity_switches),
     ]
 
 
